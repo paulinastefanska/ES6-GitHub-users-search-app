@@ -50,7 +50,7 @@ var App = function (_React$Component) {
 
       return React.createElement(
         "div",
-        null,
+        { className: "searchApp" },
         React.createElement(
           "form",
           { onSubmit: function onSubmit(event) {
@@ -67,7 +67,8 @@ var App = function (_React$Component) {
             onChange: function onChange(event) {
               return _this3.onChangeHandle(event);
             },
-            value: this.state.searchText })
+            value: this.state.searchText,
+            placeholder: "Search" })
         ),
         React.createElement(UsersList, { users: this.state.users })
       );
@@ -91,7 +92,7 @@ var UsersList = function (_React$Component2) {
     value: function render() {
       return React.createElement(
         "div",
-        null,
+        { className: "userList" },
         this.users
       );
     }
@@ -121,7 +122,7 @@ var User = function (_React$Component3) {
     value: function render() {
       return React.createElement(
         "div",
-        null,
+        { className: "user" },
         React.createElement("img", { src: this.props.user.avatar_url, style: { maxWidth: '100px' } }),
         React.createElement(
           "a",

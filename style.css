@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+.searchApp label {
+	margin: 10px;
+}
+.searchApp input {
+	height: 30px;
+	margin: 10px;
+	border-radius: 8px;
+	padding: 8px;
+}
+.userList {
+	text-align: left;
+	width: 400px;
+	margin: 20px auto;
+}
+.user {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 2px 4px 12px 0px #000;
+}
+.user a {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
